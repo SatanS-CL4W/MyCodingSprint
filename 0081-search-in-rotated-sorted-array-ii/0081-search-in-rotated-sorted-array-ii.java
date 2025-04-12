@@ -25,9 +25,9 @@ class Solution {
                     st = mid + 1;
                 } 
 
-            }else { //Right Sorted
+            } else { //Right Sorted
 
-                if(nums[mid] <= target && target <= nums[end]) {
+                if(nums[mid] < target && target <= nums[end]) {
                     st = mid + 1;
                 } else {
                     end = mid - 1;
